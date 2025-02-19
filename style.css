@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:  'Times New Roman' , sans-serif;
+}
+body{
+    background: rgb(5, 50, 133);
+}
+.card{
+    width: 90%;
+    max-width: 500px;
+    background: white;
+    margin: 100px auto 10px;
+    border-radius: 10px;
+    padding: 30px;
+}
+.options{
+    display: flex;
+    flex-direction: column;
+}
+.options button{
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    outline: 0;
+    border-width: 1px;
+    text-align: left;
+    
+}
+.options button:hover:not([disabled]){
+    background: black;
+    color: white;
+}
+.next{
+    font-weight: 200;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: white;
+    margin: 0px auto 0px;
+    cursor: pointer;
+}
+.correct{
+    background-color: rgb(203, 233, 157) !important;
+
+}
+.incorrect{
+    background-color: rgb(242, 194, 194) !important;
+}
+button:disabled {
+    opacity: 1;  
+    color: inherit;  /* Maintain text color */
+    background-color: inherit;  /* Keep original background */
+    cursor: not-allowed;  /* Show "not allowed" cursor */
+}
