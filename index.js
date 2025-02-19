@@ -67,6 +67,8 @@ function showQuestion()
         }
         button.addEventListener("click",selectAnswer);
     });
+    if(currentQuestionIndex==questions.length-1)
+        nextButton.innerHTML="Submit";
     
 }
 function selectAnswer(e)
